@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "price": 16000,
+    "title": "Opening Batsman",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Right-arm offbreak",
+    "image": "https://i.ibb.co.com/KjXCypfc/tamim-iqbal.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "price": 16000,
+    "title": "All-rounder",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Left-arm orthodox spin",
+    "image": "https://i.ibb.co.com/7JkRCw7n/Shakib-Al-Hasan.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Virat Kohli",
+    "country": "India",
+    "price": 20000,
+    "title": "Top-order Batsman",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm medium",
+    "image": "https://i.ibb.co.com/CpV3g5cF/virat-kohili.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Joe Root",
+    "country": "England",
+    "price": 18000,
+    "title": "Top-order Batsman",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm offbreak",
+    "image": "https://i.ibb.co.com/fG9Tk4tG/Joe-Root.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "price": 19000,
+    "title": "Captain & Batsman",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm offbreak",
+    "image": "https://i.ibb.co.com/Y758420B/KANE-WILLIAMSON.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "price": 17000,
+    "title": "Middle-order Batsman",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm legbreak",
+    "image": "https://i.ibb.co.com/4nMSGbym/Steve-Smith.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "price": 21000,
+    "title": "Top-order Batsman",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm offbreak",
+    "image": "https://i.ibb.co.com/svY293r5/Babar-Azam.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "price": 15000,
+    "title": "Wicketkeeper Batsman",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "None",
+    "image": "https://i.ibb.co.com/mVt5FF9j/Quinton-de-Kock.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "price": 14000,
+    "title": "Leg Spinner",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm legbreak",
+    "image": "https://i.ibb.co.com/9kkXj5fK/Rashid-Khan.jpg"
+  },
+  {
+    "id": 10,
+    "name": "David Warner",
+    "country": "Australia",
+    "price": 18000,
+    "title": "Opening Batsman",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Right-arm legbreak",
+    "image": "https://i.ibb.co.com/8nhdS2ft/David-Warner.webp"
+  },
+  {
+    "id": 11,
+    "name": "Jos Buttler",
+    "country": "England",
+    "price": 19000,
+    "title": "Wicketkeeper Batsman",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm medium",
+    "image": "https://i.ibb.co.com/Q77TJRyV/Jos-Buttler.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Litton Das",
+    "country": "Bangladesh",
+    "price": 13000,
+    "title": "Top-order Batsman",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "None",
+    "image": "https://i.ibb.co.com/PV9MpF9/Litton-Das.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Fakhar Zaman",
+    "country": "Pakistan",
+    "price": 14000,
+    "title": "Opening Batsman",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Slow left-arm orthodox",
+    "image": "https://i.ibb.co.com/jkLdPVx2/Fakhar-Zaman.webp"
+  },
+  {
+    "id": 14,
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "price": 15000,
+    "title": "Wicketkeeper Batsman",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "None",
+    "image": "https://i.ibb.co.com/7h9bGpY/mushfiq.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Mehidy Hasan Miraz",
+    "country": "Bangladesh",
+    "price": 12000,
+    "title": "All-rounder",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm offbreak",
+    "image": "https://i.ibb.co.com/jPk1Sx5f/Miraz.jpg"
+  }
+]

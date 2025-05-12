@@ -1,0 +1,28 @@
+import React, { use, useEffect } from 'react';
+import SinglePlayer from '../SinglePlayer/SinglePlayer';
+import SelectedPlayers from '../SelectedPlayers/SelectedPlayers';
+import SelectedPlayer from '../SelectedPlayers/SelectedPlayer/SelectedPlayer';
+// import playerJson from '../../../public/players.json';
+const AvailablePlayers = ({handleSelectedPlayers,showSelectedPlayersInfo,showSelectedPlayersNames}) => {
+          const [players, setPlayers] = React.useState([]);
+          useEffect(() => {
+                      fetch('/players.json')
+                              .then(response => response.json())
+                              .then(data => setPlayers(data))
+                              .catch(error => console.error('Error fetching players:', error));
+          },[]);
+          
+          return (
+                    <div>
+                              
+                              <div className='w-[96%] mx-auto grid gap-4 justify-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1'>
+                                        {
+                                        players.map((player,index) => <SinglePlayer handleSelectedPlayers={handleSelectedPlayers} player={player} key={index}></SinglePlayer> ||<SelectedPlayers player={player} handleSelectedPlayers={handleSelectedPlayers} key={index}></SelectedPlayers> || <SelectedPlayer showSelectedPlayersNames={showSelectedPlayersNames} showSelectedPlayersInfo={showSelectedPlayersInfo}></SelectedPlayer> 
+                                        ) 
+                                        }
+                              </div>
+                    </div>
+          );
+};
+
+export default AvailablePlayers;
