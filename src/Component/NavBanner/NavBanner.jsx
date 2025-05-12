@@ -10,7 +10,7 @@ const NavBanner = ({handleCoinOffer,offer}) => {
                                                   <img src={bannerMainImg} alt="" />
                                                   <p className='text-2xl text-center font-bold text-white sm:text-xl'>Assemble Your Ultimate Dream XI Cricket Team</p>
                                                   <p className='text-gray-400 sm:text-xs md:text-xl '>Beyond Boundaries Beyond Limits</p>
-                                                  <button onClick={()=>handleCoinOffer(offer)} className='bg-yellow-400 rounded-md border-2 hover:bg-sky-500 border-r-yellow-100 p-4  md:p-3 '>Claim Free Credit</button>
+                                                  <button onClick={()=>handleCoinOffer(offer)} className='bg-[#2c78f4] rounded-md border-2 hover:bg-sky-500 border-r-yellow-100 p-4  md:p-3 '>Claim Free Credit</button>
                                         </div>
             );
 };

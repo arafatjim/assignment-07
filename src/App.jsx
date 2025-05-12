@@ -53,13 +53,6 @@ function App() {
     setSelectedPlayers(newSelectedPlayers);
   };
 
-
-  // const showSelectedPlayersNames = () => {
-  //   if (selectedPlayers.length === 0) {
-  //     alert('No players selected');
-  //     setShowPlayers(false);
-  //     return;
-  //   }
     
 const [showSelectedPlayersInfo, setShowSelectedPlayersInfo] = useState(false);
   const showSelectedPlayersNames = () => {
@@ -73,12 +66,7 @@ const [showSelectedPlayersInfo, setShowSelectedPlayersInfo] = useState(false);
     setShowSelectedPlayersInfo(true);
     setShowPlayers(false);
   };
-// console.log('selected player:', selectedPlayers.length);
-// const handleSelectCount = (item)=>{
-//   const newSelectedPlayers = selectedPlayers.filter((player) => player.id !== item.id);
-//   setSelectedPlayers(newSelectedPlayers);
-//   console.log('new Player',newSelectedPlayers);
-// }
+
   return (
     <div className="">
       <Navbar offer={offer}></Navbar>
