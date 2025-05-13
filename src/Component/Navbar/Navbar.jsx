@@ -7,7 +7,10 @@ const Navbar = ({offer}) => {
                     <div className='bg-gray-800'>
                               <div className='flex w-full justify-around flex-col  mx-auto items-center text-white p-4  lg:flex-row gap-x-96'>
                               
-                                        <img src={navlogo} alt="" />
+                                        <div className='flex gap-2 items-center'>
+                                                  <img src={navlogo} alt="" />
+                                                  <p className='text-3xl font-extrabold text-[#2c48ff]'>Dream <span className='text-[#ff2424]'> XI</span></p>
+                                        </div>
                               
                               <div role="tablist" className='sm:gap-2 grid grid-cols-3 items-center justify-around md:flex gap-4 lg:gap-8 xl:gap-12 2xl:gap-16'>
                                         <button role="tab" className='bg-[#2c78f4] border-2 border-yellow-50 p-2 rounded-md hover:bg-orange-600'>Home</button>

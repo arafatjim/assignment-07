@@ -6,8 +6,9 @@ const SelectedPlayers = ({showSelectedPlayersInfo,selectedPlayers}) => {
           // console.log(selectedPlayers);
           // const {name,price} = selectedPlayers;
           return (
-                    <div className='bg-[#051e45] text-white  my-2 p-4 flex flex-col justify-between items-center'>
-                              <div className='w-11/12 mx-auto text-3xl flex justify-between items-center font-bold'>
+                    <div className=' text-white  my-2 p-4 flex flex-col justify-between items-center'>
+                              <p className='text-2xl font-extrabold text-[#2170d1]'>Selected player: {selectedPlayers.length}/6</p>
+                              <div className='w-11/12 mx-auto text-xl flex justify-between items-center font-bold'>
                                         <p>Name:</p>
                                         <p>Price</p>
                               </div>
