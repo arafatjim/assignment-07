@@ -12,10 +12,10 @@ const Footer = () => {
                                         </nav>
                                         <nav className='flex flex-col'>
                                                   <h6 className='text-xl font-bold text-[#e94141]'>Quick Lick</h6>
-                                                  <li ><a href="#">About us</a></li>
-                                                  <li ><a href="#">Contact</a></li>
-                                                  <li ><a href="#">Jobs</a></li>
-                                                  <li ><a href="#">Press kit</a></li>
+                                                  <li className='hover:underline' ><a href="#">About us</a></li>
+                                                  <li className='hover:underline'><a href="#">Contact</a></li>
+                                                  <li className='hover:underline'><a href="#">Jobs</a></li>
+                                                  <li className='hover:underline'><a href="#">Press kit</a></li>
                                         </nav>
                                         <nav className='flex flex-col'>
                                                   <h6 className='text-xl font-bold text-[#e94141]'>Legal</h6>

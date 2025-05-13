@@ -7,7 +7,7 @@ const SinglePlayer = ({player,handleSelectedPlayers}) => {
           // console.log(player.name);
           return (
                     <div className='mx-auto justify-center items-center'>
-                              <div className=' bg-base-100 h-[370px] border-2 border-gray-600 bg-[#3a498b] rounded-md shadow-sm m-auto items-center sm:w-96 lg:w-72 md:w-72'>
+                              <div className=' bg-base-100 h-[370px] border-2 border-gray-600 bg-[#11263f] rounded-md shadow-sm m-auto items-center sm:w-96 lg:w-72 md:w-72'>
                                         <figure className='w-full h-30 overflow-hidden bg-cover p-1'>
                                                   <img
                                                   src={image}
@@ -34,8 +34,8 @@ const SinglePlayer = ({player,handleSelectedPlayers}) => {
                                                   <h4 className=' p-1 rounded-md'>{bowlingStyle}</h4>
                                         </div>
                                         <div className="flex justify-between items-center prince-info font-semibold p-1">
-                                                  <p>Price: {price} M</p>
-                                                  <button onClick={()=>handleSelectedPlayers(player)} className='text-sm text-gray-700 border-2 border-gray-900 bg-yellow-500 p-1 rounded-md'>Choose Player</button>
+                                                  <p>Price: {price} $</p>
+                                                  <button onClick={()=>handleSelectedPlayers(player)} className='bg-[#2c78f4] border-2 border-yellow-50 p-1 rounded-md hover:bg-orange-600'>Choose Player</button>
                                         </div>
                               </div>
                     </div>
