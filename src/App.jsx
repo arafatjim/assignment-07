@@ -7,6 +7,7 @@ import AvailablePlayers from './Component/AvailablePlayer/AvailablePlayers'
 import UtilitiesBtn from './Component/Utilities/UtilitiesBtn'
 import SelectedPlayers from './Component/SelectedPlayers/SelectedPlayers'
 import SelectedPlayer from './Component/SelectedPlayers/SelectedPlayer/SelectedPlayer'
+  import { ToastContainer, toast } from 'react-toastify';
 function App() {
   const [offer, setOffer] = useState(0);
   const handleCoinOffer = () =>{
@@ -20,7 +21,7 @@ function App() {
 
   const togglePlayers = () => {
     if (offer === 0) {
-      alert('Please claim your free credit first');
+      toast('Please claim your free credit first');
       setShowPlayers(false);
       return;
     }
@@ -38,7 +39,7 @@ function App() {
   const handleSelectedPlayers = (player) => {
     const newSelectedPlayers = [...selectedPlayers, player];
     if (newSelectedPlayers.length >= 7) {
-      alert('You can only select up to 6 players');
+      toast('You can only select up to 6 players');
       
 
       return;
@@ -58,7 +59,7 @@ const [showSelectedPlayersInfo, setShowSelectedPlayersInfo] = useState(false);
   const showSelectedPlayersNames = () => {
     setShowSelectedPlayersInfo(!showSelectedPlayersInfo);
     if (selectedPlayers.length === 0) {
-      alert('No players selected');
+      toast('No players selected');
       setShowPlayers(true);
       setShowSelectedPlayersInfo(false);
       return;
@@ -73,7 +74,7 @@ const [showSelectedPlayersInfo, setShowSelectedPlayersInfo] = useState(false);
       <NavBanner offer={offer} handleCoinOffer={handleCoinOffer}></NavBanner>
       <UtilitiesBtn selectedPlayers={selectedPlayers} handleSelectedPlayers={handleSelectedPlayers} showPlayers={showPlayers} togglePlayers={togglePlayers} showSelectedPlayersNames={showSelectedPlayersNames} showSelectedPlayersInfo={showSelectedPlayersInfo}> </UtilitiesBtn>
       
-      
+      <ToastContainer />
     </div>
     
     
