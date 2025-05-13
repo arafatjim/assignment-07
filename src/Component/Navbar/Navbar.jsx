@@ -4,12 +4,12 @@ import coinImg from '../../assets//dollar.png';
 
 const Navbar = ({offer}) => {
           return (
-                    <div className='bg-gray-800'>
+                    <div className='bg-[#11263f]'>
                               <div className='flex w-full justify-around flex-col  mx-auto items-center text-white p-4  lg:flex-row gap-x-96'>
                               
                                         <div className='flex gap-2 items-center'>
                                                   <img src={navlogo} alt="" />
-                                                  <p className='text-3xl font-extrabold text-[#2c48ff]'>Dream <span className='text-[#ff2424]'> XI</span></p>
+                                                  <p className='text-3xl font-extrabold text-[#8b9aff]'>Dream <span className='text-[#ff2424]'> XI</span></p>
                                         </div>
                               
                               <div role="tablist" className='sm:gap-2 grid grid-cols-3 items-center justify-around md:flex gap-4 lg:gap-8 xl:gap-12 2xl:gap-16'>

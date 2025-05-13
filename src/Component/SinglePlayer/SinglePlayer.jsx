@@ -6,8 +6,8 @@ const SinglePlayer = ({player,handleSelectedPlayers}) => {
           const {id,country,name,title, image, price,battingStyle,bowlingStyle,} = player;
           // console.log(player.name);
           return (
-                    <div className='mx-auto justify-center items-center '>
-                              <div className=' bg-base-100 h-[370px] border-2 border-gray-600 bg-[#046ca0] rounded-md shadow-sm m-auto items-center sm:w-96 lg:w-72 md:w-72'>
+                    <div className='mx-auto justify-center items-center'>
+                              <div className=' bg-base-100 h-[370px] border-2 border-gray-600 bg-[#3a498b] rounded-md shadow-sm m-auto items-center sm:w-96 lg:w-72 md:w-72'>
                                         <figure className='w-full h-30 overflow-hidden bg-cover p-1'>
                                                   <img
                                                   src={image}

@@ -72,11 +72,30 @@ const [showSelectedPlayersInfo, setShowSelectedPlayersInfo] = useState(false);
     setShowPlayers(false);
   };
 
+
+// const [removePlayer, setRemaingingPlayer]=useState([]);
+// const handleRemovePlayer =()=>{
+//   const updatedPlayers = selectedPlayers.filter(
+//     player => player.id !== removePlayer.id
+//   );
+
+//   if (removePlayer.price) {
+//     setOffer(prevOffer => prevOffer + removePlayer.price);
+//   }
+
+//   setSelectedPlayers(updatedPlayers);
+//   setRemaingingPlayer(updatedPlayers)
+
+
+// }
+
+
+
   return (
-    <div className="">
+    <div className='bg-[#fbfdff]'>
       <Navbar offer={offer}></Navbar>
       <NavBanner offer={offer} handleCoinOffer={handleCoinOffer}></NavBanner>
-      <UtilitiesBtn selectedPlayers={selectedPlayers} handleSelectedPlayers={handleSelectedPlayers} showPlayers={showPlayers} togglePlayers={togglePlayers} showSelectedPlayersNames={showSelectedPlayersNames} showSelectedPlayersInfo={showSelectedPlayersInfo}> </UtilitiesBtn>
+      <UtilitiesBtn selectedPlayers={selectedPlayers} handleSelectedPlayers={handleSelectedPlayers} showPlayers={showPlayers} togglePlayers={togglePlayers} showSelectedPlayersNames={showSelectedPlayersNames} showSelectedPlayersInfo={showSelectedPlayersInfo} > </UtilitiesBtn>
       <SubscribeBanner></SubscribeBanner>
       <Footer></Footer>
       <ToastContainer />
