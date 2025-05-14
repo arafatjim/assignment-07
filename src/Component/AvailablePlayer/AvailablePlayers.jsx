@@ -16,7 +16,7 @@ const AvailablePlayers = ({handleSelectedPlayers,showSelectedPlayersInfo,showSel
                     <div>
                               
                               
-                                <p className='text-black text-2xl font-bold pl-16 py-3 flex items-center justify-center'>Available Players</p>
+                                <p className='text-black text-2xl font-bold py-3 flex items-center justify-center mx-auto'>Available Players</p>
                                 <div className='w-[96%] mx-auto grid gap-4 justify-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1'>
                                         {
                                         players.map((player,index) => <SinglePlayer handleSelectedPlayers={handleSelectedPlayers} player={player} key={index}></SinglePlayer> ||<SelectedPlayers player={player} handleSelectedPlayers={handleSelectedPlayers} key={index} removePlayer={removePlayer} handleRemove={handleRemove}></SelectedPlayers> || <SelectedPlayer showSelectedPlayersNames={showSelectedPlayersNames} showSelectedPlayersInfo={showSelectedPlayersInfo} removePlayer={removePlayer} handleRemove={handleRemove}></SelectedPlayer> 
