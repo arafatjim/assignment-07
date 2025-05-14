@@ -74,33 +74,10 @@ const [showSelectedPlayersInfo, setShowSelectedPlayersInfo] = useState(false);
   };
 
 
-// const [removePlayer, setRemaingingPlayer]=useState([]);
-// const handleRemovePlayer =()=>{
-//   const updatedPlayers = selectedPlayers.filter(
-//     player => player.id !== removePlayer.id
-//   );
-
-//   if (removePlayer.price) {
-//     setOffer(prevOffer => prevOffer + removePlayer.price);
-//   }
-
-//   setSelectedPlayers(updatedPlayers);
-//   setRemaingingPlayer(updatedPlayers)
-
-
-// }
-
-
 
 //remove a player
 const [removePlayer, setRmovePlayer]=useState([]);
-// const handleRemove = ()=>{
-//   const remainingPlayer = selectedPlayers.filter(player => player.id !== removePlayer.id);
-//   setSelectedPlayers(remainingPlayer);
-//   if (removePlayer.price) {
-//     setOffer(prevOffer => prevOffer + removePlayer.price);
-//   }
-  // setRmovePlayer(remainingPlayer);
+
   const handleRemove = (playerId) => {
     const remainingPlayer = selectedPlayers.filter(player => player.id !== playerId);
     setSelectedPlayers(remainingPlayer);
