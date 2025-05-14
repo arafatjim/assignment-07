@@ -1,10 +1,10 @@
 import React from 'react';
 import navlogo from '../../assets/logo.png';
 import coinImg from '../../assets//dollar.png';
-
+import './NavBar.css'
 const Navbar = ({offer}) => {
           return (
-                    <div className='bg-[#11263f]'>
+                    <div className='nav-bar'>
                               <div className='flex w-full justify-around flex-col  mx-auto items-center text-white p-4  lg:flex-row gap-x-96'>
                               
                                         <div className='flex gap-2 items-center'>

@@ -2,7 +2,7 @@ import React from 'react';
 import AvailablePlayers from '../AvailablePlayer/AvailablePlayers';
 import SelectedPlayers from '../SelectedPlayers/SelectedPlayers';
 
-const UtilitiesBtn = ({showPlayers,togglePlayers,handleSelectedPlayers,showSelectedPlayersInfo,selectedPlayers,showSelectedPlayersNames,handleRemovePlayer,removePlayer}) => {
+const UtilitiesBtn = ({showPlayers,togglePlayers,handleSelectedPlayers,showSelectedPlayersInfo,selectedPlayers,showSelectedPlayersNames,handleRemove,removePlayer}) => {
       return (
                   <div>
                               <div className='w-11/12 py-4 mx-auto px-2 flex flex-col justify-between items-center font-bold md:flex-row'>
@@ -19,7 +19,8 @@ const UtilitiesBtn = ({showPlayers,togglePlayers,handleSelectedPlayers,showSelec
                               </div>
                               
                               {showPlayers && <AvailablePlayers handleSelectedPlayers={handleSelectedPlayers} togglePlayers={togglePlayers} showSelectedPlayersNames={selectedPlayers} />}
-                              {showSelectedPlayersInfo && <SelectedPlayers showSelectedPlayersInfo={showSelectedPlayersInfo} selectedPlayers={selectedPlayers} removePlayer={removePlayer} handleRemovePlayer={handleRemovePlayer} />}
+                              
+                              {showSelectedPlayersInfo && <SelectedPlayers  showSelectedPlayersInfo={showSelectedPlayersInfo} selectedPlayers={selectedPlayers} removePlayer={removePlayer} handleRemove={handleRemove} />}
                               
                               
                   </div>

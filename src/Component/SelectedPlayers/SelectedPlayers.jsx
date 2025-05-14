@@ -1,7 +1,7 @@
 import React from 'react';
 import SelectedPlayer from './SelectedPlayer/SelectedPlayer';
 
-const SelectedPlayers = ({selectedPlayers,handleRemovePlayer,removePlayer}) => {
+const SelectedPlayers = ({selectedPlayers,handleRemove,removePlayer}) => {
           // console.log(showSelectedPlayersInfo);
           // console.log(selectedPlayers);
           // const {name,price} = selectedPlayers;
@@ -16,7 +16,7 @@ const SelectedPlayers = ({selectedPlayers,handleRemovePlayer,removePlayer}) => {
                     {/* <p>Selected Player: {player.name}</p> */}
                              {
                               selectedPlayers.map((item) =>
-                                        <SelectedPlayer item={item} key={item.id} removePlayer={removePlayer} handleRemovePlayer={handleRemovePlayer}></SelectedPlayer>
+                                        <SelectedPlayer item={item} key={item.id} removePlayer={removePlayer} handleRemove={handleRemove}></SelectedPlayer>
                               )
                              } 
                              

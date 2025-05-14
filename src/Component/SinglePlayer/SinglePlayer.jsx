@@ -3,7 +3,7 @@ import userImg from '../../assets/user.png';
 import flagImg from '../../assets/flag.png';
 
 const SinglePlayer = ({player,handleSelectedPlayers}) => {
-          const {id,country,name,title, image, price,battingStyle,bowlingStyle,} = player;
+          const {country,name,title, image, price,battingStyle,bowlingStyle,} = player;
           // console.log(player.name);
           return (
                     <div className='mx-auto justify-center items-center'>
@@ -22,7 +22,7 @@ const SinglePlayer = ({player,handleSelectedPlayers}) => {
                                                   <div className='country-info flex justify-between items-center px-1 py-2'>
                                                            <div className="flag flex items-center gap-2 font-semibold">
                                                             <img className='w-4 h-4' src={flagImg} alt="" />
-                                                             <h4 className=''>{country}</h4>
+                                                             <p className='text-sm'>{country}</p>
                                                            </div>
                                                             <button className='text-sm p-1 rounded-md'>{title}</button>
                                                   </div>

@@ -13,7 +13,7 @@ import Footer from './Component/Footer/Footer'
 function App() {
   const [offer, setOffer] = useState(0);
   const handleCoinOffer = () =>{
-    const newOffer =  100000;
+    const newOffer =200000;
       setOffer(newOffer);
       // alert(`You have received ${newOffer} coins!`);
   }
@@ -44,18 +44,19 @@ function App() {
       toast('You can only select up to 6 players');
       showPlayers(false);
       setShowSelectedPlayersInfo(false);
-      
-
       return;
     }
     if (selectedPlayers.find(selected => selected.id === player.id)) {
       // alert('This player is already selected');
       return;
     }
-    const remCoins = 100000 - player.price;
+    const remCoins = offer - player.price;
+    // if(remCoins < 0){
+    //   toast('You have not enough coin')
+    // }
       setOffer(remCoins);
       setSelectedPlayers(newSelectedPlayers);
-    setSelectedPlayers(newSelectedPlayers);
+    // setSelectedPlayers(newSelectedPlayers);
   };
 
     
@@ -91,11 +92,32 @@ const [showSelectedPlayersInfo, setShowSelectedPlayersInfo] = useState(false);
 
 
 
+//remove a player
+const [removePlayer, setRmovePlayer]=useState([]);
+// const handleRemove = ()=>{
+//   const remainingPlayer = selectedPlayers.filter(player => player.id !== removePlayer.id);
+//   setSelectedPlayers(remainingPlayer);
+//   if (removePlayer.price) {
+//     setOffer(prevOffer => prevOffer + removePlayer.price);
+//   }
+  // setRmovePlayer(remainingPlayer);
+  const handleRemove = (playerId) => {
+    const remainingPlayer = selectedPlayers.filter(player => player.id !== playerId);
+    setSelectedPlayers(remainingPlayer);
+    const removedPlayer = selectedPlayers.find(player => player.id === playerId);
+    if (removedPlayer && removedPlayer.price) {
+      setOffer(prevOffer => prevOffer + removedPlayer.price);
+    }
+    setRmovePlayer(remainingPlayer);
+  };
+
+
+
   return (
     <div className='bg-[#fbfdff]'>
       <Navbar offer={offer}></Navbar>
       <NavBanner offer={offer} handleCoinOffer={handleCoinOffer}></NavBanner>
-      <UtilitiesBtn selectedPlayers={selectedPlayers} handleSelectedPlayers={handleSelectedPlayers} showPlayers={showPlayers} togglePlayers={togglePlayers} showSelectedPlayersNames={showSelectedPlayersNames} showSelectedPlayersInfo={showSelectedPlayersInfo} > </UtilitiesBtn>
+      <UtilitiesBtn selectedPlayers={selectedPlayers} handleSelectedPlayers={handleSelectedPlayers} showPlayers={showPlayers} togglePlayers={togglePlayers} showSelectedPlayersNames={showSelectedPlayersNames} showSelectedPlayersInfo={showSelectedPlayersInfo} removePlayer={removePlayer} handleRemove={handleRemove}> </UtilitiesBtn>
       <SubscribeBanner></SubscribeBanner>
       <Footer></Footer>
       <ToastContainer />

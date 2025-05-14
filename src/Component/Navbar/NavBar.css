@@ -1,0 +1,8 @@
+.nav-bar{
+          background: #11263f;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+          
+}

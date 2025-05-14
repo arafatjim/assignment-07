@@ -1,6 +1,6 @@
 import React from 'react';
 import removeBtn from '../../../assets/removed.png'
-const SelectedPlayer = ({item,handleRemovePlayer,removePlayer}) => {
+const SelectedPlayer = ({item,handleRemove,removePlayer,player}) => {
           const {name,battingStyle,image} = item;
           // console.log(removePlayer);
           return (
@@ -17,7 +17,7 @@ const SelectedPlayer = ({item,handleRemovePlayer,removePlayer}) => {
                                                             {/* <p className='flex gap-1 items-center'>: {price} <img className='w-4 h-4' src={coinImg} alt="" /></p> */}
                                                   </div>
                                                   
-                                                  <button onClick={() => removePlayer && handleRemovePlayer(removePlayer.id)} className='p-3 bg-none'>
+                                                  <button onClick={() =>handleRemove(item.id)} className='p-3 bg-none'>
                                                             <img className='w-5 h-5' src={removeBtn} alt="" />
                                                   </button>
                                                   

@@ -4,7 +4,7 @@ import bannerMainImg from '../../assets/banner-main.png';
 const NavBanner = ({handleCoinOffer,offer}) => {
             return (
                                         <div 
-                                                   className='mx-auto justify-center items-center w-11/12  px-2  md:py-2 my-8 flex gap-2 flex-col lg:h-auto relative rounded-lg bg-[#11263f] sm:w-11/12 h-84 py-4 lg:w-11/12  md:w-11/12' 
+                                                   className='mx-auto justify-center items-center w-11/12  px-2 flex gap-2 flex-col lg:h-auto relative rounded-lg bg-[#11263f] sm:w-11/12 h-84 py-4 lg:w-11/12 md:w-11/12 mt-56' 
                                                    style={{ backgroundImage: `url(${bannerImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                                         >
                                                   <img src={bannerMainImg} alt="" />
