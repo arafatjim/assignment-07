@@ -98,9 +98,7 @@ const [removePlayer, setRmovePlayer]=useState([]);
       <SubscribeBanner></SubscribeBanner>
       <Footer></Footer>
       <ToastContainer />
-    </div>
-    
-    
+    </div>   
   )
 }
 
